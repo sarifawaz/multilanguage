@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Pizza logo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link here -->
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
+rel="stylesheet"
+/>
+    <title>Pizza Project</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/Pizza logo.png" alt="Avatar Logo" style="width:80px;" class="rounded-pill">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="contact">Contact Us</a>
+            </li>
+
+            <!-- Icon dropdown -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="america flag m-0"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>
+            <a class="dropdown-item" href="#" id="english"><i class="america flag" ></i>English</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="arabic"><i class="syria flag" ></i>Arabic</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <article>
+        <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+              type="button"
+              data-mdb-target="#carouselExampleCaptions"
+              data-mdb-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1">
+            </button>
+
+            <button
+              type="button"
+              data-mdb-target="#carouselExampleCaptions"
+              data-mdb-slide-to="1"
+              aria-label="Slide 2">
+            </button>
+
+            <button
+              type="button"
+              data-mdb-target="#carouselExampleCaptions"
+              data-mdb-slide-to="2"
+              aria-label="Slide 3">
+            </button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/pizza without nothing.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-dark fs-5 fw-bold font-monospace">
+                  <p id="pizza1">Well, pizza has tomatoes, doesn’t that count as veggies?</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/pizza befor flour.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-dark fs-5 fw-bold font-monospace">
+                  <p id="pizza2">Pizza Made With "Love".</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/pizza with flour.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption fs-5 fw-bold font-monospace">
+                  <p id="pizza3">And, that's what we call the circle of life.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+
+      <article id="pizza" class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="pizzacard">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/pizza3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text text-dark fw-bold font-monospace" id="recipe">Pizza with salami, ham, bacon, garlic and fresh herbs.</p>
+                <div class=" d-flex justify-content-end">
+                  <button class="btn btn-light" data-mdb-ripple-color="dark" type="button" id="order">Order Now...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/pizza4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text text-dark fw-bold font-monospace" id="recipe1">Pizza with ham, olives, tomatoes and green basil.</p>
+                <div class=" d-flex justify-content-end">
+                  <button class="btn btn-light" data-mdb-ripple-color="dark" type="button" id="order1">Order Now...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/pizza6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text text-dark fw-bold font-monospace" id="recipe2">Pizza with Pepperoni Sausage and Bacon.</p>
+                <div class=" d-flex justify-content-end">
+                  <button class="btn btn-light" data-mdb-ripple-color="dark" type="button" id="order2">Order Now...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+
+    <footer class="text-center text-white" style="background-color: #262626;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Iframe -->
+        <section class="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663.2208852614062!2d36.274674148127566!3d33.51589803758768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e74d1f8f9b4b%3A0xc0f494ee8cb65f84!2sPizza%20hot!5e0!3m2!1sen!2s!4v1647197224744!5m2!1sen!2s" width="600" style="border-radius: 5px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Iframe -->
+    <!-- Section: Social media -->
+    <section class="mb-4 mt-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);" id="copyright">
+        © 2022 Copyright:
+        <a class="text-white" href="#" id="pizzaproject">Pizza Project</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- javascript link here -->
+    <script src="script.js"></script>
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js">  
+    </script>
+</body>
+</html>
