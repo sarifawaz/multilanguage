@@ -15,6 +15,7 @@ var order1 = document.getElementById("order1")
 var order2 = document.getElementById("order2")
 var copyright = document.getElementById("copyright")
 var pizzaproject = document.getElementById("pizzaproject")
+var changeflag = document.getElementById("changeflag")
 
 arabic.onclick = ()=>{
     setlanguage("arabic")
@@ -44,6 +45,7 @@ if (getlanguage === "arabic"){
     order2.innerHTML = "اطلب الان..."
     copyright.innerHTML = "© حقوق الطبع والنشر محفوظة 2022"
     pizzaproject.innerHTML = "مشروع بيتزا"
+    changeflag.className = "syria flag m-0"
 } else if(getlanguage === "english"){
     about.innerHTML = "About Us"
     contact.innerHTML = "Contact Us"
@@ -59,6 +61,7 @@ if (getlanguage === "arabic"){
     order2.innerHTML = "Order Now..."
     copyright.innerHTML = "© 2022 Copyright"
     pizzaproject.innerHTML = "Pizza Project"
+    changeflag.className = "america flag m-0"
 }
 
 }

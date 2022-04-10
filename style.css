@@ -6,10 +6,6 @@ article{
     display: flex;
     justify-content: center;
 }
-.collapse{
-    justify-content: flex-end;
-    margin-right: 30px;
-}
 #pizza{
     margin-bottom: 30px;
 }
